@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 通用色碼 */
+
+:root {
+  --primary-100: #f5fee7;
+  --primary-200: #e8fec5;
+  --primary-300: #c0fa73;
+  --primary-400: #57a203;
+  --primary-500: #477a11;
+  --neutral-0: #fff;
+  --neutral-100: #f8f9fa;
+  --neutral-200: #e9ecef;
+  --neutral-300: #dee2e6;
+  --neutral-400: #ced4da;
+  --neutral-500: #adb5bd;
+  --neutral-600: #6c757d;
+  --neutral-700: #495057;
+  --neutral-800: #343a40;
+  --neutral-900: #212529;
+  --danger-100: #fcf1f1;
+  --danger-200: #eba7a7;
+  --danger-300: #d74f7f;
+  --warnrig-100: #fef6ec;
+  --warnrig-200: #f9c588;
+  --warnrig-300: #f38b12;
+  --success-100: #eff8f4;
+  --success-100: #9ad1ba;
+  --success-100: #36a375;
+  --info-100: #eef5fc;
+  --info-200: #97c3ed;
+  --info-300: #3087db;
+}
+
+/* 通用樣式 */
+
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: var(--primary-400);
+}
+
+img {
+  max-width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.fl-wrap {
+  flex-wrap: wrap;
+}
+
+.just-center {
+  justify-content: center;
+}
+
+.just-between {
+  justify-content: space-between;
+}
+
+.ali-cent {
+  align-items: center;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.h6 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.py-7 {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.py-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.py-32 {
+  padding-top: 32px;
+  padding-top: 32px;
+}
+
+.py-48 {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.py-64 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
+
+.mr-12 {
+  margin-right: 12px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+.mr-48 {
+  margin-right: 48px;
+}
+
+.mt-4 {
+  margin-top: 4px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-64 {
+  margin-top: 64px;
+}
+
+.my-12 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.my-16 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.my-24 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.my-48 {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.my-64 {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.pd-10 {
+  padding: 10px;
+}
+
+.pd-12 {
+  padding: 12px;
+}
+
+.pb-16 {
+  padding-bottom: 16px;
+}
+
+.pt-12 {
+  padding-top: 12px;
+}
+
+/* 欄位樣式 */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.col-1 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12);
+}
+
+.col-2 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 4);
+}
+
+.col-5 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 5);
+}
+
+.col-6 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 6);
+}
+
+.col-7 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 12);
+}
+
+/* 麵包屑 */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  padding: 0 12px;
+}
+
+.breadcrumb-item {
+  display: flex;
+}
+
+.text-color {
+  color: var(--neutral-600);
+}
+
+.text-pri-400 {
+  color: var(--primary-400);
+}
+
+.text-danger-300 {
+  color: var(--danger-300);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bi {
+  font-size: 24px;
+}
+
+.btn {
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.bg-pri-200 {
+  background-color: var(--primary-200);
+}
+
+.bg-neu-100 {
+  background-color: var(--neutral-100);
+}
+
+.btn-dark {
+  background-color: var(--neutral-900);
+  color: var(--neutral-0);
+}
+
+.btn-dark:hover {
+  background-color: var(--neutral-700);
+  color: var(--neutral-0);
+}
+
+.btn-light {
+  border: 1px solid var(--neutral-900);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.copy {
+  padding-top: 32px;
+  border-top: 1px solid var(--neutral-300);
+}
